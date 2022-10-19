@@ -1,6 +1,6 @@
 node{
    stage('SCM Checkout'){
-     git 'https://github.com/Saravlee478/my-app'
+     git 'https://github.com/Saravlee478/my-app.git'
    }
     stage('war file a kudu'){
       def mvnHome =  tool name: 'maven3', type: 'maven'   
