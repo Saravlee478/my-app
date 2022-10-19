@@ -34,7 +34,7 @@ stage('Build Docker Image'){
 	{		//  do nothing if there is an exception
 	}
    }
-   stage('Docker deployment'){
+   stage('Docker deploy pannu'){
    sh 'docker run -d -p 8090:8080 --name container1 saravlee/dc10192022:0.1' 
    }
 }
